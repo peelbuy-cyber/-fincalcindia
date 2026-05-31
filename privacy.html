@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — FinCalc India</title>
+  <meta name="description" content="Privacy Policy for FinCalc India. Learn how we handle your data, cookies, and third-party services." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0a0e1a;
+      --surface: #111827;
+      --surface2: #1a2235;
+      --border: #1e2d45;
+      --accent: #00d4aa;
+      --text: #e8edf5;
+      --text-muted: #6b7fa3;
+      --text-dim: #394968;
+      --radius: 16px;
+      --font-display: 'Syne', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    /* HEADER */
+    .header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(10,14,26,0.9);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+    .header-inner {
+      max-width: 860px; margin: 0 auto;
+      padding: 16px 24px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo { font-family: var(--font-display); font-size: 20px; font-weight: 800; color: var(--text); text-decoration: none; }
+    .logo span { color: var(--accent); }
+    .logo em { font-style: normal; color: var(--text-muted); font-size: 13px; font-weight: 400; margin-left: 2px; }
+    .back-link {
+      color: var(--text-muted); text-decoration: none; font-size: 13px;
+      font-weight: 500; display: flex; align-items: center; gap: 6px;
+      transition: color 0.2s;
+    }
+    .back-link:hover { color: var(--accent); }
+
+    /* HERO */
+    .page-hero {
+      background: linear-gradient(180deg, rgba(0,212,170,0.06) 0%, transparent 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 56px 24px 40px;
+      text-align: center;
+    }
+    .page-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 5vw, 44px);
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 12px;
+    }
+    .page-hero h1 span { color: var(--accent); }
+    .page-hero p { color: var(--text-muted); font-size: 14px; }
+    .last-updated {
+      display: inline-block;
+      margin-top: 14px;
+      background: rgba(0,212,170,0.08);
+      border: 1px solid rgba(0,212,170,0.2);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 500;
+      padding: 5px 14px;
+      border-radius: 100px;
+      letter-spacing: 0.5px;
+    }
+
+    /* CONTENT */
+    .content {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 48px;
+    }
+    .toc h3 {
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+    .toc ol { padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+    .toc a { color: var(--accent); text-decoration: none; font-size: 14px; transition: opacity 0.2s; }
+    .toc a:hover { opacity: 0.75; }
+
+    .section {
+      margin-bottom: 44px;
+      padding-bottom: 44px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section:last-child { border-bottom: none; }
+    .section-num {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    .section h2 {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 16px;
+      color: var(--text);
+      scroll-margin-top: 80px;
+    }
+    .section p { color: var(--text-muted); margin-bottom: 14px; font-size: 15px; }
+    .section p:last-child { margin-bottom: 0; }
+    .section ul { padding-left: 20px; color: var(--text-muted); display: flex; flex-direction: column; gap: 8px; font-size: 15px; }
+    .section ul li::marker { color: var(--accent); }
+
+    .highlight-box {
+      background: rgba(0,212,170,0.06);
+      border: 1px solid rgba(0,212,170,0.18);
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin-top: 16px;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    .highlight-box strong { color: var(--accent); }
+
+    .contact-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-top: 16px;
+    }
+    .contact-box p { margin-bottom: 8px; }
+    .contact-box a { color: var(--accent); text-decoration: none; }
+    .contact-box a:hover { text-decoration: underline; }
+
+    /* FOOTER */
+    .footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 28px 24px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-dim);
+    }
+    .footer a { color: var(--text-muted); text-decoration: none; margin: 0 10px; }
+    .footer a:hover { color: var(--accent); }
+
+    @media (max-width: 600px) {
+      .content { padding: 32px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Fin<span>Calc</span><em>India</em></a>
+    <a href="index.html" class="back-link">← Back to Calculators</a>
+  </div>
+</header>
+
+<div class="page-hero">
+  <h1>Privacy <span>Policy</span></h1>
+  <p>How we collect, use, and protect your information</p>
+  <div class="last-updated">Last Updated: January 2026</div>
+</div>
+
+<div class="content">
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc">
+    <h3>Contents</h3>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#data-collected">Information We Collect</a></li>
+      <li><a href="#no-personal-data">No Personal Data Collection</a></li>
+      <li><a href="#cookies">Cookies & Tracking</a></li>
+      <li><a href="#adsense">Google AdSense & Advertising</a></li>
+      <li><a href="#third-party">Third-Party Links</a></li>
+      <li><a href="#childrens-privacy">Children's Privacy</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
+  </div>
+
+  <!-- 1. OVERVIEW -->
+  <div class="section" id="overview">
+    <div class="section-num">01</div>
+    <h2>Overview</h2>
+    <p>Welcome to FinCalc India (<strong>fincalcindia.in</strong>). We provide free online financial calculators for Indian users including EMI, GST, SIP, Income Tax, FD, HRA, Gratuity, and Loan Eligibility calculators.</p>
+    <p>This Privacy Policy explains how we handle information when you visit our website. We are committed to protecting your privacy. In short — we do not collect, store, or sell any personal information you enter into our calculators.</p>
+    <div class="highlight-box">
+      <strong>Simple version:</strong> All calculations happen entirely in your browser. Your financial data never leaves your device and is never sent to our servers.
+    </div>
+  </div>
+
+  <!-- 2. DATA COLLECTED -->
+  <div class="section" id="data-collected">
+    <div class="section-num">02</div>
+    <h2>Information We Collect</h2>
+    <p>We collect minimal, non-personal information automatically when you visit our website:</p>
+    <ul>
+      <li>Browser type and version</li>
+      <li>Operating system</li>
+      <li>Pages visited and time spent on pages</li>
+      <li>Referring website URL</li>
+      <li>General geographic location (country/city level only, via IP address)</li>
+      <li>Device type (mobile, desktop, tablet)</li>
+    </ul>
+    <p>This information is collected by third-party analytics services (such as Google Analytics) and is used solely to understand how users interact with our site so we can improve it.</p>
+  </div>
+
+  <!-- 3. NO PERSONAL DATA -->
+  <div class="section" id="no-personal-data">
+    <div class="section-num">03</div>
+    <h2>No Personal Data Collection</h2>
+    <p>FinCalc India does <strong>not</strong> collect any of the following:</p>
+    <ul>
+      <li>Your name, email address, or phone number</li>
+      <li>Financial figures you enter into our calculators (salary, loan amount, investment amount, etc.)</li>
+      <li>Bank account or payment information</li>
+      <li>Aadhaar number, PAN, or any government ID</li>
+      <li>Location beyond city/country level</li>
+    </ul>
+    <p>All calculator inputs and results are processed locally in your web browser using JavaScript. No data is transmitted to our servers.</p>
+    <p>We do not require you to create an account or log in to use any feature on this website.</p>
+  </div>
+
+  <!-- 4. COOKIES -->
+  <div class="section" id="cookies">
+    <div class="section-num">04</div>
+    <h2>Cookies &amp; Tracking</h2>
+    <p>Our website uses cookies — small text files stored on your device. We use the following types:</p>
+    <ul>
+      <li><strong>Analytics cookies</strong> — Google Analytics uses cookies to track page views, session duration, and user behaviour in aggregate form. This helps us understand which calculators are most used.</li>
+      <li><strong>Advertising cookies</strong> — Google AdSense places cookies to show relevant advertisements based on your browsing history and interests.</li>
+    </ul>
+    <p>You can control or disable cookies through your browser settings at any time. Disabling cookies may affect the display of advertisements but will not affect the functionality of our calculators.</p>
+    <div class="highlight-box">
+      <strong>How to manage cookies:</strong> In Chrome — Settings → Privacy & Security → Cookies. In Firefox — Settings → Privacy & Security → Cookies and Site Data.
+    </div>
+  </div>
+
+  <!-- 5. ADSENSE -->
+  <div class="section" id="adsense">
+    <div class="section-num">05</div>
+    <h2>Google AdSense &amp; Advertising</h2>
+    <p>FinCalc India uses Google AdSense to display advertisements. Google AdSense is a service provided by Google LLC.</p>
+    <p>Google may use cookies and similar technologies to serve ads based on your prior visits to our website or other websites. Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to our site and/or other sites on the Internet.</p>
+    <ul>
+      <li>Google AdSense uses the DoubleClick cookie to serve more relevant ads</li>
+      <li>Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to our website</li>
+      <li>You may opt out of personalised advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener" style="color:var(--accent)">Google Ads Settings</a></li>
+      <li>You may also opt out of a third-party vendor's use of cookies by visiting <a href="http://www.aboutads.info/choices/" target="_blank" rel="noopener" style="color:var(--accent)">aboutads.info</a></li>
+    </ul>
+    <p>For more information on how Google uses data from sites that use its services, visit: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener" style="color:var(--accent)">How Google uses information from sites or apps that use our services</a>.</p>
+  </div>
+
+  <!-- 6. THIRD PARTY -->
+  <div class="section" id="third-party">
+    <div class="section-num">06</div>
+    <h2>Third-Party Links</h2>
+    <p>Our website may contain links to third-party websites such as banks, financial institutions, or affiliate partners (e.g. BankBazaar, loan providers). These links are provided for your convenience.</p>
+    <p>We have no control over the content or privacy practices of those websites. We strongly recommend reading the privacy policy of any third-party website you visit through our links.</p>
+    <p>FinCalc India is not responsible for the privacy practices or content of any linked external websites.</p>
+  </div>
+
+  <!-- 7. CHILDREN -->
+  <div class="section" id="childrens-privacy">
+    <div class="section-num">07</div>
+    <h2>Children's Privacy</h2>
+    <p>FinCalc India is not intended for use by children under the age of 13. We do not knowingly collect any personal information from children.</p>
+    <p>If you are a parent or guardian and believe your child has provided personal information on our website, please contact us immediately and we will take steps to remove such information.</p>
+  </div>
+
+  <!-- 8. CHANGES -->
+  <div class="section" id="changes">
+    <div class="section-num">08</div>
+    <h2>Changes to This Policy</h2>
+    <p>We reserve the right to update this Privacy Policy at any time. Any changes will be posted on this page with an updated "Last Updated" date.</p>
+    <p>We encourage you to review this Privacy Policy periodically. Your continued use of FinCalc India after any changes constitutes your acceptance of the updated policy.</p>
+  </div>
+
+  <!-- 9. CONTACT -->
+  <div class="section" id="contact">
+    <div class="section-num">09</div>
+    <h2>Contact Us</h2>
+    <p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us:</p>
+    <div class="contact-box">
+      <p><strong>FinCalc India</strong></p>
+      <p>Website: <a href="index.html">fincalcindia.in</a></p>
+      <p>Email: <a href="mailto:contact@fincalcindia.in">contact@fincalcindia.in</a></p>
+      <p style="margin-top:12px;color:var(--text-muted);font-size:13px;">We aim to respond to all inquiries within 48 hours.</p>
+    </div>
+  </div>
+
+</div><!-- end content -->
+
+<footer class="footer">
+  <p>© 2026 FinCalc India — For informational purposes only.</p>
+  <p style="margin-top:8px;">
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="about.html">About</a>
+  </p>
+</footer>
+
+</body>
+</html>
